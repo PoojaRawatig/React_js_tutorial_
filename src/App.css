@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container for the list of cards */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal-width columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Styling for each card */
+.SeriesCard {
+  display: flex;
+  flex-direction: row; /* Arrange content in a row */
+  gap: 10px; /* Space between items within the card */
+  border: 1px solid #ddd; /* Border around the card */
+  padding: 1rem; /* Padding inside the card */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #ffffff; /* Background color of the card */
+  max-width: 100%; /* Ensure card does not exceed container width */
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.series-image {
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  object-fit: cover; /* Ensure image covers the area */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+.series-details {
+  display: flex;
+  flex-direction: column; /* Layout details in a column */
+}
+
+
+h2, p {
+  margin: 0.5rem 0; /* Margin around text elements */
+}
+
+button {
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  margin-top: 0;
+  border-bottom-right-radius: 23px;
+  background-color: rgb(137, 137, 225);
+}
+
+button:hover {
+  background-color: #ddd;
+  border: black;
+ 
+}
+
+.Ra {
+  /* background-color: orange; */
+  margin-left: 94px;
+  border-bottom-left-radius: 23px;
+  width: 80px; /* Adjust width as needed */
+  padding: 7px; /* Padding inside the element */
+  border-radius: 8px; /* Rounded corners */
+  color: white; /* Text color for better readability */
+  text-align: center; /* Center text horizontally */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+.high-rating {
+  color: green;
+}
+
+.low-rating {
+  color: red;
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+}

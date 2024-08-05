@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.SeriesCard {
+  list-style: none;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-container {
+  width: 100%;
+  text-align: center;
+}
+
+.series-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.series-details {
+  padding: 16px;
+}
+
+.series-details h2 {
+  margin: 0 0 8px;
+  font-size: 1.5em;
+}
+
+.series-details p {
+  margin: 4px 0;
+}
+
+.series-details .row {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.series-details .row button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.series-details .row button:hover {
+  background-color: #0056b3;
+}
+
+.Ra {
+  margin-top: 16px;
+  font-weight: bold;
+}
+
+.high-rating {
+  color: green;
+}
+
+.low-rating {
+  color: red;
+}
